@@ -1,0 +1,61 @@
+{
+  "ticker_1": {
+    "text": "Latest Updates · New Research Outputs · Extractivism Studies · Environmental Justice · Community Report"
+  },
+  "ticker_2": {
+    "segments": [
+      {
+        "type": "text",
+        "value": "New Publication:"
+      },
+      {
+        "type": "link",
+        "label": "Under the Surface",
+        "url": "#publications"
+      },
+      {
+        "type": "text",
+        "value": " - New blog Article: "
+      },
+      {
+        "type": "link",
+        "label": "War and Agriculture in Sudan part 2",
+        "url": "/blog/5"
+      },
+      {
+        "type": "text",
+        "value": " - New blog Article: "
+      },
+      {
+        "type": "link",
+        "label": "A Parallel Front for Rejecting War and Building Peace",
+        "url": "/blog/3"
+      },
+      {
+        "type": "link",
+        "label": "- New blog Article: Education in Sudan: From Chronic Deterioration to Total Crisis",
+        "url": "/blog/7"
+      },
+      {
+        "type": "link",
+        "label": "- New blog Article: Antiquities and Museums in Sudan: Challenges and Future Aspirations",
+        "url": "/blog/8"
+      },
+      {
+        "type": "link",
+        "label": "- NEW blog Article : From the Field to the Margins: Sudanese Women Farmers in Times of Conflict and Hunger",
+        "url": "/blog/9"
+      },
+      {
+        "type": "link",
+        "label": "- NEW blog Article : Sudan’s Plant Gene Bank:\nFrom Growth and Development to Ruin and Destruction … and the Prospects for Recovery",
+        "url": "/blog/10"
+      },
+      {
+        "type": "link",
+        "label": "- NEW blog Article : Plant Gene Bank in Sudan (2-2)",
+        "url": "/blog/11"
+      }
+    ]
+  }
+}
