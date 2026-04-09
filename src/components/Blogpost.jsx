@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import blogData from "../data/blog.json";
+import { getBlogImage } from "../data/blogImages.js";
 import Footer from "../components/Footer.jsx";
 import en from "../data/en.json";
 import ar from "../data/Ar.json";
@@ -78,6 +79,7 @@ export default function BlogPost({ lang }) {
   if (!post) return <h2>Post not found</h2>;
 
   const body = lang === "en" ? post.body_en : post.body_ar;
+  const image = getBlogImage(lang, id);
 
   return (
     <>
@@ -89,6 +91,13 @@ export default function BlogPost({ lang }) {
         </div>
 
         <div className="section-content">
+          {image && (
+            <img
+              src={image}
+              alt={lang === "en" ? post.title_en : post.title_ar}
+              className="article-cover"
+            />
+          )}
           <article className="blog-body">{renderRichBody(body)}</article>
         </div>
 
