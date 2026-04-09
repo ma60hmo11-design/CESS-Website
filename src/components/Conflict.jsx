@@ -456,11 +456,20 @@ export default function Conflict({ lang }) {
             <h2 style={{ marginTop: "20px" }}>{project.header}</h2>
             <p style={{ lineHeight: "1.6", fontSize: "1.1rem", marginTop: "15px" }}>{project.body}</p>
             <div className="conflict-actions">
-           
-
-              <button className="see-more-btn conflict-report-link" onClick={openVolkswagen}>
-                {lang === "ar" ? volkswagenReport.ar.title : volkswagenReport.en.title}
-              </button>
+              <article className="conflict-feature-card">
+                <div className="conflict-feature-copy">
+                  <span className="volkswagen-section-kicker">{lang === "ar" ? "تقرير" : "Report"}</span>
+                  <h3>{lang === "ar" ? volkswagenReport.ar.title : volkswagenReport.en.title}</h3>
+                  <button className="see-more-btn conflict-report-link" onClick={openVolkswagen}>
+                    {lang === "ar" ? "فتح التقرير" : "Open report"}
+                  </button>
+                </div>
+                <img
+                  src={lang === "ar" ? arabicCover : englishCover}
+                  alt={lang === "ar" ? volkswagenReport.ar.title : volkswagenReport.en.title}
+                  className="conflict-feature-cover"
+                />
+              </article>
             </div>
           </div>
         </section>
