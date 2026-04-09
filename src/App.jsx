@@ -52,7 +52,12 @@ function AppContent() {
       </div>
 
       <div className="top-buttons">
-        <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
+        <button
+          className="menu-btn"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-expanded={menuOpen}
+          aria-label={lang === "en" ? "Toggle navigation menu" : "فتح أو إغلاق القائمة"}
+        >
           ☰
         </button>
 
@@ -65,7 +70,7 @@ function AppContent() {
       </div>
 
       {menuOpen && (
-        <div className={`menu-dropdown ${lang === "ar" ? "rtl" : ""}`}>
+        <nav className={`menu-dropdown ${lang === "ar" ? "rtl" : ""}`} aria-label={lang === "en" ? "Site sections" : "أقسام الموقع"}>
           <button onClick={() => scrollToSection("about")}>
             {lang === "en" ? "About" : "عن المركز"}
           </button>
@@ -78,7 +83,7 @@ function AppContent() {
           <button onClick={() => scrollToSection("contact")}>
             {lang === "en" ? "Contact Us" : "تواصل معنا"}
           </button>
-        </div>
+        </nav>
       )}
 
       <Routes>
