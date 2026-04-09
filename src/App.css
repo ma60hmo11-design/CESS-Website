@@ -331,6 +331,560 @@ a:hover {
 .blog-body .blog-ul { margin: 0.4rem 0 0.8rem 1.2rem; }
 .blog-body .blog-ul li { margin: 0.25rem 0; }
 
+.volkswagen-section-kicker {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #0A1E3F;
+  background: rgba(244, 194, 41, 0.22);
+  padding: 0.4rem 0.7rem;
+  border-radius: 999px;
+}
+
+.conflict-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+}
+
+.conflict-report-link {
+  padding: 10px 18px;
+  text-decoration: none;
+}
+
+.volkswagen-report-shell {
+  padding-top: 16px;
+}
+
+.volkswagen-inline-back {
+  margin-bottom: 20px;
+}
+
+.volkswagen-report-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(300px, 0.8fr);
+  gap: 28px;
+  align-items: start;
+  padding-bottom: 26px;
+  border-bottom: 1px solid #ddd;
+}
+
+.volkswagen-report-intro h2,
+.volkswagen-bridge-copy h3,
+.volkswagen-column-head h3,
+.volkswagen-deep-card h3,
+.volkswagen-actions-copy h3 {
+  color: #0A1E3F;
+}
+
+.volkswagen-report-intro h2 {
+  margin: 16px 0 10px;
+  font-size: 2.4rem;
+  line-height: 1;
+  text-shadow: 0 10px 20px rgba(10, 30, 63, 0.08);
+}
+
+.volkswagen-report-subtitle {
+  margin: 0 0 14px;
+  font-size: 1.2rem;
+  color: #0A1E3F;
+  padding-inline-start: 14px;
+  border-inline-start: 4px solid #F4C229;
+}
+
+.volkswagen-report-pdfs {
+  display: grid;
+  gap: 16px;
+}
+
+.volkswagen-section-nav {
+  position: sticky;
+  top: 84px;
+  z-index: 20;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 22px 0 18px;
+  padding: 12px 14px;
+  border: 1px solid rgba(10, 30, 63, 0.12);
+  background: linear-gradient(135deg, rgba(10, 30, 63, 0.96) 0%, rgba(16, 48, 97, 0.94) 65%, rgba(244, 194, 41, 0.3) 100%);
+  box-shadow: 0 16px 30px rgba(10, 30, 63, 0.12);
+  backdrop-filter: blur(8px);
+}
+
+.volkswagen-nav-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid rgba(244, 194, 41, 0.4);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fffdf7;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.volkswagen-nav-pill:hover,
+.volkswagen-nav-pill.is-active {
+  transform: translateY(-2px);
+  border-color: #F4C229;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.12);
+  background: #F4C229;
+  color: #0A1E3F;
+}
+
+.volkswagen-pdf-tile {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: 14px;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #d7d7d7;
+  background: linear-gradient(180deg, #faf6e7 0%, #ffffff 100%);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.volkswagen-pdf-tile:hover,
+.volkswagen-pdf-tile.is-related {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 24px rgba(10, 30, 63, 0.08);
+  border-color: rgba(10, 30, 63, 0.25);
+}
+
+.volkswagen-pdf-tile img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border: 1px solid rgba(10, 30, 63, 0.16);
+}
+
+.volkswagen-pdf-tile strong,
+.volkswagen-mini-stat strong,
+.volkswagen-link-card h4,
+.volkswagen-evidence-copy h4 {
+  color: #0A1E3F;
+}
+
+.volkswagen-pdf-text-tile {
+  grid-template-columns: 96px minmax(0, 1fr);
+}
+
+.volkswagen-pdf-text-mark {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 3 / 4;
+  width: 100%;
+  border: 1px solid rgba(10, 30, 63, 0.16);
+  background: linear-gradient(180deg, #0A1E3F 0%, #173768 100%);
+  color: #F4C229;
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.volkswagen-pdf-tile span {
+  display: block;
+  margin-top: 6px;
+  color: #6a6a6a;
+  font-size: 0.92rem;
+}
+
+.volkswagen-bridge {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 20px;
+  margin: 28px 0;
+}
+
+.volkswagen-bridge-copy {
+  padding: 22px;
+  border-inline-start: 4px solid #F4C229;
+  background: linear-gradient(90deg, rgba(244, 194, 41, 0.12) 0%, rgba(255, 255, 255, 1) 55%);
+}
+
+.volkswagen-bridge-copy h3 {
+  margin: 12px 0 10px;
+  font-size: 1.6rem;
+}
+
+.volkswagen-bridge-copy p {
+  margin: 0;
+  line-height: 1.75;
+}
+
+.volkswagen-highlight-strip {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.volkswagen-mini-stat {
+  padding: 16px;
+  border-top: 3px solid #F4C229;
+  background: #f9f9f6;
+}
+
+.volkswagen-mini-stat strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.25rem;
+}
+
+.volkswagen-linked-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: 24px;
+}
+
+.volkswagen-executive-card,
+.volkswagen-slider-card,
+.volkswagen-deep-card {
+  margin-top: 24px;
+  padding: 22px;
+  border: 1px solid #dcdcdc;
+  background: #fff;
+}
+
+.volkswagen-column-head {
+  margin-bottom: 14px;
+}
+
+.volkswagen-column-head h3 {
+  margin: 12px 0 0;
+  font-size: 1.5rem;
+  display: inline-block;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #F4C229;
+}
+
+.volkswagen-card-stack,
+.volkswagen-evidence-masonry,
+.volkswagen-deep-sections {
+  display: grid;
+  gap: 16px;
+}
+
+.volkswagen-link-card,
+.volkswagen-evidence-tile {
+  padding: 20px;
+  border: 1px solid #dcdcdc;
+  background: #fff;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease, opacity 0.22s ease;
+}
+
+.volkswagen-link-card:hover,
+.volkswagen-link-card.is-related,
+.volkswagen-evidence-tile:hover,
+.volkswagen-evidence-tile.is-related,
+.volkswagen-deep-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(10, 30, 63, 0.1);
+  border-color: rgba(10, 30, 63, 0.2);
+}
+
+.volkswagen-link-card.is-related,
+.volkswagen-evidence-tile.is-related {
+  background: linear-gradient(180deg, #fffdf7 0%, #ffffff 100%);
+}
+
+.volkswagen-link-card.is-muted,
+.volkswagen-evidence-tile.is-muted {
+  opacity: 0.38;
+}
+
+.volkswagen-link-card-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+  margin-bottom: 12px;
+}
+
+.volkswagen-link-card h4 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.volkswagen-link-card-top span {
+  font-size: 0.85rem;
+  color: #7b7b7b;
+  text-align: right;
+}
+
+.volkswagen-link-card p,
+.volkswagen-evidence-copy p,
+.volkswagen-deep-card p,
+.volkswagen-actions-list li {
+  line-height: 1.72;
+}
+
+.volkswagen-evidence-masonry {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.volkswagen-evidence-tile {
+  padding: 0;
+  background: #f9f9f6;
+  overflow: hidden;
+}
+
+.volkswagen-evidence-tile img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.volkswagen-evidence-copy {
+  padding: 14px;
+}
+
+.volkswagen-evidence-copy h4 {
+  margin: 0 0 8px;
+}
+
+.volkswagen-deep-sections {
+  margin-top: 28px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.volkswagen-deep-card h3 {
+  margin: 12px 0;
+  font-size: 1.35rem;
+  display: inline-block;
+  padding-bottom: 6px;
+  border-bottom: 3px solid rgba(244, 194, 41, 0.9);
+}
+
+.volkswagen-slider-panel {
+  margin-top: 18px;
+}
+
+.volkswagen-slider-frame {
+  overflow: hidden;
+  border: 1px solid #dcdcdc;
+  background: #f9f9f6;
+}
+
+.volkswagen-image-open {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.volkswagen-slider-frame img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+.volkswagen-image-open:hover img {
+  transform: scale(1.02);
+  filter: saturate(1.04);
+}
+
+.volkswagen-slider-controls {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr) 48px;
+  gap: 14px;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.volkswagen-slider-controls button,
+.volkswagen-popup-trigger,
+.volkswagen-modal-head button {
+  background: #0A1E3F;
+  color: #F4C229;
+  border: none;
+  cursor: pointer;
+}
+
+.volkswagen-slider-controls button {
+  min-height: 48px;
+  font-size: 1.2rem;
+}
+
+.volkswagen-slider-caption strong {
+  color: #0A1E3F;
+}
+
+.volkswagen-slider-caption p,
+.volkswagen-findings-list p,
+.volkswagen-source-links a,
+.volkswagen-mogo-card figcaption,
+.volkswagen-company-list p {
+  line-height: 1.72;
+}
+
+.volkswagen-findings-list {
+  margin-top: 18px;
+}
+
+.volkswagen-scroll-card {
+  position: relative;
+}
+
+.volkswagen-slider-dots {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+.volkswagen-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  border: 1px solid #0A1E3F;
+  background: transparent;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.volkswagen-dot.is-active,
+.volkswagen-dot:hover {
+  transform: scale(1.12);
+  background: #F4C229;
+}
+
+.volkswagen-mogo-card {
+  margin: 20px 0;
+  background: #f9f9f6;
+  border: 1px solid #dcdcdc;
+}
+
+.volkswagen-mogo-card img {
+  width: 100%;
+  display: block;
+}
+
+.volkswagen-mogo-card figcaption {
+  padding: 12px 14px;
+}
+
+.volkswagen-source-links {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.volkswagen-source-links a {
+  padding: 12px 14px;
+  border-left: 3px solid #F4C229;
+  background: #f9f9f6;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.volkswagen-source-links a:hover {
+  transform: translateX(4px);
+  background: #fff8df;
+}
+
+.volkswagen-popup-trigger {
+  margin-top: 12px;
+  padding: 14px 16px;
+  width: 100%;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.volkswagen-demand-list {
+  margin: 18px 0;
+  padding-inline-start: 20px;
+}
+
+.volkswagen-demand-list li {
+  margin-bottom: 10px;
+}
+
+.volkswagen-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 30, 63, 0.58);
+  display: grid;
+  place-items: center;
+  z-index: 999999;
+  padding: 20px;
+}
+
+.volkswagen-modal {
+  width: min(920px, 100%);
+  max-height: 84vh;
+  overflow: auto;
+  background: #fff;
+  border: 1px solid #dcdcdc;
+  padding: 22px;
+}
+
+.volkswagen-modal-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: start;
+  margin-bottom: 18px;
+}
+
+.volkswagen-modal-head h3 {
+  margin: 0;
+  color: #0A1E3F;
+}
+
+.volkswagen-modal-head button {
+  width: 42px;
+  height: 42px;
+  font-size: 1.4rem;
+}
+
+.volkswagen-company-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 18px;
+}
+
+.volkswagen-company-list p {
+  margin: 0;
+  padding: 10px 12px;
+  background: #f9f9f6;
+  border: 1px solid #ececec;
+}
+
+.volkswagen-image-modal {
+  width: min(1020px, 100%);
+}
+
+.volkswagen-modal-image {
+  width: 100%;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.site-wrapper.rtl .volkswagen-section-kicker {
+  letter-spacing: 0;
+}
+
+.site-wrapper.rtl .volkswagen-section-nav {
+  justify-content: flex-start;
+}
+
+.site-wrapper.rtl .volkswagen-link-card-top span,
+.site-wrapper.rtl .volkswagen-popup-trigger,
+.site-wrapper.rtl .volkswagen-source-links a {
+  text-align: right;
+}
+
+.site-wrapper.rtl .volkswagen-slider-controls,
+.site-wrapper.rtl .volkswagen-company-list {
+  direction: rtl;
+}
+
 
 /* RTL flip for menu */
 
@@ -400,6 +954,33 @@ font-size: 14px;
   text-align: right; 
   font-size:16px;   
   font-family: 'Noto Sans Arabic', sans-serif; /* Arabic needs more line height */
+}
+
+.conflict-actions,
+.volkswagen-report-header,
+.volkswagen-linked-grid,
+.volkswagen-deep-sections,
+.volkswagen-evidence-masonry,
+.volkswagen-company-list,
+.volkswagen-slider-controls {
+  grid-template-columns: 1fr;
+}
+
+.volkswagen-report-intro h2 {
+  font-size: 2rem;
+}
+
+.volkswagen-pdf-tile {
+  grid-template-columns: 84px minmax(0, 1fr);
+}
+
+.volkswagen-link-card-top {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.volkswagen-source-links a:hover {
+  transform: none;
 }
 
 }
