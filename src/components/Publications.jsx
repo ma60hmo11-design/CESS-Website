@@ -22,44 +22,44 @@ export default function Publications({ text, lang }) {
 
       <div className="section-content">
         <div className="pub-list">
-        {pubKeys.map((key) => {
-          const pub = text[key];
-          if (!pub) return null;
+          {pubKeys.map((key) => {
+            const pub = text[key];
+            if (!pub) return null;
 
-          const hasContent =
-            (pub.header && pub.header.trim()) ||
-            (pub.description && pub.description.trim()) ||
-            (pub.year && String(pub.year).trim()) ||
-            (pub.link && pub.link.trim());
+            const hasContent =
+              (pub.header && pub.header.trim()) ||
+              (pub.description && pub.description.trim()) ||
+              (pub.year && String(pub.year).trim()) ||
+              (pub.link && pub.link.trim());
 
-          if (!hasContent) return null;
+            if (!hasContent) return null;
 
-          return (
-            <article className="pub-item" key={key}>
-              <div className="pub-copy">
-                <h4>{pub.header}</h4>
+            return (
+              <article className="pub-item" key={key}>
+                <div className="pub-copy">
+                  <h4>{pub.header}</h4>
 
-                {pub.link ? (
-                  <a
-                    href={pub.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="pdf-link"
-                  >
+                  {pub.link ? (
+                    <a
+                      href={pub.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="pdf-link"
+                    >
+                      <span className="pub-meta">
+                        {pub.description} - {pub.year}
+                      </span>
+                      <img className="pdf-icon" src={Pdficon} alt="PDF icon" />
+                    </a>
+                  ) : (
                     <span className="pub-meta">
                       {pub.description} - {pub.year}
                     </span>
-                    <img className="pdf-icon" src={Pdficon} alt="PDF icon" />
-                  </a>
-                ) : (
-                  <span className="pub-meta">
-                    {pub.description} - {pub.year}
-                  </span>
-                )}
-              </div>
-            </article>
-          );
-        })}
+                  )}
+                </div>
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>
